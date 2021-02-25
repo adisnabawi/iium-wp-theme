@@ -1,0 +1,102 @@
+/*
+Theme Name: IIUM 2021
+Theme URI: https://www.iium.edu.my
+Author: Information Technology Division (adis@iium.edu.my)
+Author URI: https://www.iium.edu.my/itd
+Description: The 2021 theme for IIUM.
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: beginning the first version
+Text Domain: iium2021
+
+*/
+
+body {
+    background-color: rgb(247, 247, 247);
+}
+
+#masthead {
+    .menu-top {
+        img {
+            height: 90px !important;
+            width: auto;
+            margin: 10px;
+        }
+        
+    }
+
+    .menu-bottom {
+        background-color: rgb(31, 133, 133);
+        ul {
+            li {
+                display: inline-block;
+                margin: 10px;
+                text-decoration: none;
+                font-weight: 400;
+
+                a {
+                    color: #fff;
+                    text-decoration: none;
+                }
+
+                ul {
+                    position: absolute;
+                    display: none;
+                }
+
+                &:hover{
+
+                    ul {
+                        background-color: rgb(41, 41, 41);
+                        width: 150px;
+                        display: block;
+                        
+                       li {
+                           display: block;
+                           a {
+                            &:hover {
+                                color:cadetblue;
+                            }
+                           }
+                            
+                       } 
+                    }
+                }
+                
+            }
+            
+           
+        }
+    }
+}
+
+.footer {
+    background-color: rgb(31, 133, 133);
+    color: #fff;
+    padding-top:20px;
+    padding-bottom:20px;
+    .company-info {
+        img {
+            width:80%;
+            height: auto;
+        }
+    }
+
+    a {
+        color: #fff;
+    }
+    .link-subs {
+        ul {
+            li{   
+                margin-left: -40px;
+                list-style: none;
+
+                a {
+                    text-decoration: none;
+                }
+            }
+        }    
+       
+    }
+}

@@ -1,0 +1,83 @@
+/*
+Theme Name: IIUM 2021
+Theme URI: https://www.iium.edu.my
+Author: Information Technology Division (adis@iium.edu.my)
+Author URI: https://www.iium.edu.my/itd
+Description: The 2021 theme for IIUM.
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: beginning the first version
+Text Domain: iium2021
+
+*/
+body {
+  background-color: #f7f7f7;
+}
+
+#masthead .menu-top img {
+  height: 90px !important;
+  width: auto;
+  margin: 10px;
+}
+
+#masthead .menu-bottom {
+  background-color: #1f8585;
+}
+
+#masthead .menu-bottom ul li {
+  display: inline-block;
+  margin: 10px;
+  text-decoration: none;
+  font-weight: 400;
+}
+
+#masthead .menu-bottom ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+#masthead .menu-bottom ul li ul {
+  position: absolute;
+  display: none;
+}
+
+#masthead .menu-bottom ul li:hover ul {
+  background-color: #292929;
+  width: 150px;
+  display: block;
+}
+
+#masthead .menu-bottom ul li:hover ul li {
+  display: block;
+}
+
+#masthead .menu-bottom ul li:hover ul li a:hover {
+  color: cadetblue;
+}
+
+.footer {
+  background-color: #1f8585;
+  color: #fff;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.footer .company-info img {
+  width: 80%;
+  height: auto;
+}
+
+.footer a {
+  color: #fff;
+}
+
+.footer .link-subs ul li {
+  margin-left: -40px;
+  list-style: none;
+}
+
+.footer .link-subs ul li a {
+  text-decoration: none;
+}
+/*# sourceMappingURL=style.css.map */
