@@ -20,40 +20,33 @@ body {
   width: auto;
   margin: 10px;
 }
-
 #masthead .menu-bottom {
   background-color: #1f8585;
 }
-
 #masthead .menu-bottom ul li {
   display: inline-block;
   margin: 10px;
   text-decoration: none;
   font-weight: 400;
 }
-
 #masthead .menu-bottom ul li a {
   color: #fff;
   text-decoration: none;
 }
-
 #masthead .menu-bottom ul li ul {
   position: absolute;
   display: none;
 }
-
 #masthead .menu-bottom ul li:hover ul {
   background-color: #292929;
   width: 150px;
   display: block;
 }
-
 #masthead .menu-bottom ul li:hover ul li {
   display: block;
 }
-
 #masthead .menu-bottom ul li:hover ul li a:hover {
-  color: cadetblue;
+  color: #1f8585;
 }
 
 .footer {
@@ -62,22 +55,51 @@ body {
   padding-top: 20px;
   padding-bottom: 20px;
 }
-
 .footer .company-info img {
   width: 80%;
   height: auto;
 }
-
 .footer a {
   color: #fff;
 }
-
 .footer .link-subs ul li {
   margin-left: -40px;
   list-style: none;
 }
-
 .footer .link-subs ul li a {
   text-decoration: none;
 }
+
+.div_search {
+  right: 0;
+  left: 0;
+  background-color: #cac9c9;
+}
+.div_search .iium_search {
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.div_search .iium_search .search {
+  width: 70%;
+  border: 0px;
+  outline: none;
+  border-radius: 0px;
+}
+.div_search .iium_search .btn-search {
+  outline: none;
+  border: 0px;
+  width: 30%;
+  border-radius: 0px;
+  background-color: #1f8585;
+}
+
+@media only screen and (max-width: 660px) {
+  #masthead .menu-top img {
+    height: auto !important;
+    width: 60%;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */

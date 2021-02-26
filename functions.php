@@ -130,3 +130,5 @@ function themeslug_enqueue_script() {
 add_action( 'wp_enqueue_scripts', 'themeslug_enqueue_style' );
 add_action( 'wp_enqueue_scripts', 'themeslug_enqueue_script' );
 
+
+
