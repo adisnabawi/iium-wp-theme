@@ -20,12 +20,6 @@ get_header();
         
         
 		</main>
-        <div class="div_search">
-            <form action="<?php echo esc_url( home_url( '/' ) ); ?>" method="get" class="form-inline iium_search">
-                <input type="text" name="s" class="form-control search" placeholder="What do you want to study">
-                <input type="submit" class="btn btn-primary btn-search" value="Search">
-            </form>
-        </div>
 	</div><!-- .content-area -->
 
 <?php
