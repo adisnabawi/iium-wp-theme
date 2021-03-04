@@ -13,6 +13,7 @@ Text Domain: iium2021
 */
 
 $primary-color:rgb(31, 133, 133);
+$transparent-primary-color: #1f8585bd;
 body {
     background-color: rgb(247, 247, 247);
 }
@@ -25,6 +26,14 @@ body {
             margin: 10px;
         }
         
+    }
+
+    .menu-bottom-mobile {
+        display: none;
+        background-color: $primary-color;
+        ul {
+            li { margin: 10px; }
+        }
     }
 
     .menu-bottom {
@@ -72,8 +81,12 @@ body {
     }
 }
 
+.site-footer {
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 .footer {
-    background-color: $primary-color;
+    background-color: $transparent-primary-color;
     color: #fff;
     padding-top:20px;
     padding-bottom:20px;
@@ -138,4 +151,40 @@ body {
             
         }
     }
-  }
+
+    #masthead {
+        .menu-bottom {
+            display: none;
+        }
+    
+        .menu-bottom-mobile {
+            display: block;
+
+            .hamburger {
+                margin:10px;
+                color:#fff;
+                font-size: 24px;
+                text-align: right;
+
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+            .show-menu {
+                display: none;
+                ul {
+                    list-style: none;
+                    padding-bottom: 20px;
+                    a {
+                        color:#fff;
+                        text-decoration: none;
+                        &:hover {
+                            color:#000;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+}

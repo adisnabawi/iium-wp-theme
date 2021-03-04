@@ -20,63 +20,64 @@ body {
   width: auto;
   margin: 10px;
 }
-
+#masthead .menu-bottom-mobile {
+  display: none;
+  background-color: #1f8585;
+}
+#masthead .menu-bottom-mobile ul li {
+  margin: 10px;
+}
 #masthead .menu-bottom {
   background-color: #1f8585;
 }
-
 #masthead .menu-bottom ul li {
   display: inline-block;
   margin: 10px;
   text-decoration: none;
   font-weight: 400;
 }
-
 #masthead .menu-bottom ul li a {
   color: #fff;
   text-decoration: none;
 }
-
 #masthead .menu-bottom ul li ul {
   position: absolute;
   display: none;
 }
-
 #masthead .menu-bottom ul li:hover ul {
   background-color: #292929;
   width: 150px;
   display: block;
 }
-
 #masthead .menu-bottom ul li:hover ul li {
   display: block;
 }
-
 #masthead .menu-bottom ul li:hover ul li a:hover {
   color: #1f8585;
 }
 
+.site-footer {
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .footer {
-  background-color: #1f8585;
+  background-color: #1f8585bd;
   color: #fff;
   padding-top: 20px;
   padding-bottom: 20px;
 }
-
 .footer .company-info img {
   width: 80%;
   height: auto;
 }
-
 .footer a {
   color: #fff;
 }
-
 .footer .link-subs ul li {
   margin-left: -40px;
   list-style: none;
 }
-
 .footer .link-subs ul li a {
   text-decoration: none;
 }
@@ -86,21 +87,18 @@ body {
   left: 0;
   background-color: #cac9c9;
 }
-
 .div_search .iium_search {
   padding-left: 10%;
   padding-right: 10%;
   padding-top: 30px;
   padding-bottom: 30px;
 }
-
 .div_search .iium_search .search {
   width: 70%;
   border: 0px;
   outline: none;
   border-radius: 0px;
 }
-
 .div_search .iium_search .btn-search {
   outline: none;
   border: 0px;
@@ -114,5 +112,36 @@ body {
     height: auto !important;
     width: 60%;
   }
+
+  #masthead .menu-bottom {
+    display: none;
+  }
+  #masthead .menu-bottom-mobile {
+    display: block;
+  }
+  #masthead .menu-bottom-mobile .hamburger {
+    margin: 10px;
+    color: #fff;
+    font-size: 24px;
+    text-align: right;
+  }
+  #masthead .menu-bottom-mobile .hamburger:hover {
+    cursor: pointer;
+  }
+  #masthead .menu-bottom-mobile .show-menu {
+    display: none;
+  }
+  #masthead .menu-bottom-mobile .show-menu ul {
+    list-style: none;
+    padding-bottom: 20px;
+  }
+  #masthead .menu-bottom-mobile .show-menu ul a {
+    color: #fff;
+    text-decoration: none;
+  }
+  #masthead .menu-bottom-mobile .show-menu ul a:hover {
+    color: #000;
+  }
 }
+
 /*# sourceMappingURL=style.css.map */

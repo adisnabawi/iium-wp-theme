@@ -25,7 +25,17 @@
         ?>
     </div>
     <div class="menu-bottom">
-    <?php  wp_nav_menu(array( 'theme_location' => 'primary' )); ?>
+        <?php  wp_nav_menu(array( 'theme_location' => 'primary' )); ?>
+    </div>
+    <div class="menu-bottom-mobile">
+        <div class="hamburger">
+            <i class="fa fa-bars"></i>
+        </div>
+        
+        <div class="show-menu">
+        <?php  wp_nav_menu(array( 'theme_location' => 'primary' )); ?>
+        </div>
+       
     </div>
     </div>
 			

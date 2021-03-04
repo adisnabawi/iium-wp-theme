@@ -123,12 +123,12 @@ function themeslug_enqueue_style() {
     wp_enqueue_style( 'iium2021',  get_stylesheet_uri(), array(), wp_get_theme()->get( 'Version' ) );
 }
  
-function themeslug_enqueue_script() {
-    wp_enqueue_script( 'iium2021', get_theme_file_uri('/js/master.js') );
-}
+// function themeslug_enqueue_script() {
+//     wp_enqueue_script( 'iium2021', get_theme_file_uri('/js/master.js') );
+// }
  
 add_action( 'wp_enqueue_scripts', 'themeslug_enqueue_style' );
-add_action( 'wp_enqueue_scripts', 'themeslug_enqueue_script' );
+// add_action( 'wp_enqueue_scripts', 'themeslug_enqueue_script' );
 
 
 
