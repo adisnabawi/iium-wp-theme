@@ -16,7 +16,7 @@
 <div id="page" class="site">
 	<header id="masthead">
     <div class="mainmenu">
-    <div class="menu-top">
+    <div class="menu-top container">
         <?php 
         
         if ( function_exists( 'the_custom_logo' ) ) {
@@ -25,7 +25,9 @@
         ?>
     </div>
     <div class="menu-bottom">
+        <div class="container">
         <?php  wp_nav_menu(array( 'theme_location' => 'primary' )); ?>
+        </div>
     </div>
     <div class="menu-bottom-mobile">
         <div class="hamburger">

@@ -39,6 +39,8 @@ body {
     .menu-bottom {
         background-color:$primary-color;
         ul {
+            padding-left: 0px;
+
             li {
                 display: inline-block;
                 margin: 10px;
