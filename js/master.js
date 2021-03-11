@@ -5,3 +5,6 @@ $(".hamburger").click(function(){
 $("#primary").click(function() {
     $(".show-menu").hide();
 })
+$("#content").click(function() {
+    $(".show-menu").hide();
+})
