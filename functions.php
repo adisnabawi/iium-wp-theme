@@ -2,7 +2,7 @@
 
 if ( ! function_exists( 'iium2021_setup' ) ) :
 function iium2021_setup() {
-		
+
 		load_theme_textdomain( 'iium2021', get_template_directory() . '/languages' );
 
 		// Add default posts and comments RSS feed links to head.
@@ -122,13 +122,25 @@ add_action( 'after_setup_theme', 'iium2021_setup' );
 function themeslug_enqueue_style() {
     wp_enqueue_style( 'iium2021',  get_stylesheet_uri(), array(), wp_get_theme()->get( 'Version' ) );
 }
- 
+
 // function themeslug_enqueue_script() {
 //     wp_enqueue_script( 'iium2021', get_theme_file_uri('/js/master.js') );
 // }
- 
+
 add_action( 'wp_enqueue_scripts', 'themeslug_enqueue_style' );
 // add_action( 'wp_enqueue_scripts', 'themeslug_enqueue_script' );
 
-
-
+function my_theme_logo_register_rest_routes() {
+    // Sample request URL: http://example.com/wp-json/iium-wp-theme/v1/logo/
+    register_rest_route( 'iium-wp-theme/v1', '/logo/', [
+        'methods'  => 'GET',
+        'callback' => function ( $request ) {
+            $logo = get_theme_mod( 'custom_logo' );
+						$image = wp_get_attachment_image_src( $logo , 'full' );
+						$image_url = $image[0];
+						$json =  array('logo' => $image_url);
+						return wp_send_json($json);
+        }
+    ] );
+}
+add_action( 'rest_api_init', 'my_theme_logo_register_rest_routes' );
