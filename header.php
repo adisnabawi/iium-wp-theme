@@ -4,11 +4,12 @@
 	<meta charset="<?php bloginfo( 'charset' ); ?>" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta http-equiv="Cache-control" content="max-age=0">  
-  <title>IIUM</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
+  	<meta http-equiv="Cache-control" content="max-age=0">
+  	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<?php wp_head(); ?>
+	<title>IIUM</title>
+	<meta name="description" content="The International Islamic University Malaysia (IIUM) is the manifestation of one of the major aspirations of Muslim scholars in Malaysia to have an Islamic university in Malaysia to lead the Muslim ummah in all branches of knowledge">
 </head>
 
 <body <?php body_class(); ?>>
