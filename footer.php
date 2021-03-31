@@ -7,16 +7,16 @@
         <div class="container">
         <div class="row">
             <div class="col-md-4 company-info">
-            <?php 
+            <?php
             if ( function_exists( 'the_custom_logo' ) ) {
                 the_custom_logo();
             }
             ?>
             <br><br>
-            
+
             International Islamic University Malaysia <br>
             P.O. Box 10, 50728 Kuala Lumpur <br> <br>
-            
+
                 <b>Phone : </b>(+603) 6421 6421 <br>
                 <b>Fax : </b> (+603) 6421 4053 <br>
                 <b>Email : </b> webmaster@iium.edu.my
@@ -25,7 +25,7 @@
             <div class="col-md-2 link-subs">
                 <h6>Students & Parents</h6>
                 <?php  wp_nav_menu( array( 'theme_location' => 'footer-student-parent' ) ); ?>
-            
+
             </div>
             <div class="col-md-2 link-subs">
                 <h6>Researchers, Lecturers & Alumni</h6>
@@ -36,7 +36,7 @@
             <div class="col-md-2 link-subs">
                 <h6>Others</h6>
                 <?php  wp_nav_menu( array( 'theme_location' => 'footer-others' ) ); ?></div>
-            
+
             <div class="col-md-6">
                 <br>
                 <small>Copyright &copy; International Islamic University Malaysia 2021</small>
@@ -47,19 +47,19 @@
                     the_privacy_policy_link( '', '<span role="separator" aria-hidden="true"></span>' );
                 }
             ?>
-            
+
             </div>
         </div>
         </div>
-        
+
     </div><!-- .site-info -->
-    
+
 </footer><!-- #colophon -->
 
 </div><!-- #page -->
 
 <?php wp_footer(); ?>
 <!--<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>-->
-<script src="<?php  echo get_theme_file_uri('/js/master.js'); ?>"></script>
+<!-- <script src="<?php  echo get_theme_file_uri('/js/master.js'); ?>"></script> -->
 </body>
 </html>

@@ -126,6 +126,15 @@ function themeslug_enqueue_style() {
 // function themeslug_enqueue_script() {
 //     wp_enqueue_script( 'iium2021', get_theme_file_uri('/js/master.js') );
 // }
+function load_scripts(){
+    wp_enqueue_script('jquery');
+}
+add_action('wp_enqueue_scripts', 'load_scripts');
+
+function load_custom_scripts(){
+    wp_enqueue_script( 'js-file', get_template_directory_uri() . '/js/master.js');
+}
+add_action('wp_enqueue_scripts', 'load_custom_scripts');
 
 add_action( 'wp_enqueue_scripts', 'themeslug_enqueue_style' );
 // add_action( 'wp_enqueue_scripts', 'themeslug_enqueue_script' );

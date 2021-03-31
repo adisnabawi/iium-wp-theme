@@ -1,3 +1,4 @@
+jQuery(document).ready(function($){
 $(".hamburger").click(function(){
     $(this).next(".show-menu").toggle();
 });
@@ -8,3 +9,4 @@ $("#primary").click(function() {
 $("#content").click(function() {
     $(".show-menu").hide();
 })
+});
