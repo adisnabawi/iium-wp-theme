@@ -11,9 +11,11 @@ $(".openanimate").click(function(e){
 
 $("#primary").click(function() {
     $(".show-menu").hide();
+    $(".openanimate")[0].onclick();
 })
 $("#content").click(function() {
     $(".show-menu").hide();
+    $(".openanimate")[0].onclick();
 })
 
 });
