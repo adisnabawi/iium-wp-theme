@@ -153,3 +153,19 @@ function my_theme_logo_register_rest_routes() {
     ] );
 }
 add_action( 'rest_api_init', 'my_theme_logo_register_rest_routes' );
+
+function my_theme_multisite_getdetails_register_rest_routes() {
+    // Sample request URL: http://example.com/wp-json/iium-wp-theme/v1/sites/
+    register_rest_route( 'iium-wp-theme/v1', '/sites/', [
+        'methods'  => 'GET',
+        'callback' => function ( $request ) {
+					$json =  array('status' => 'Not a multisite site');
+					if(function_exists('get_sites')){
+						$blog_list = get_sites();
+						$json =  array('sites' => $blog_list);
+					}
+						return wp_send_json($json);
+        }
+    ] );
+}
+add_action( 'rest_api_init', 'my_theme_multisite_getdetails_register_rest_routes' );
