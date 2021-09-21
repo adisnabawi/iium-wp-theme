@@ -161,8 +161,14 @@ function my_theme_multisite_getdetails_register_rest_routes() {
         'callback' => function ( $request ) {
 					$json =  array('status' => 'Not a multisite site');
 					if(function_exists('get_sites')){
+						$output = [];
 						$blog_list = get_sites();
-						$json =  array('sites' => $blog_list);
+						foreach ($blog_list as $blog) {
+							$sites = get_blog_details($blog->blog_id);
+							$output[] = array('name'=>$sites->blogname, 'url' =>$sites->siteurl, 'last_updated' => $blog->last_updated,
+							'public' => $blog->public,  'description' => get_blog_option( $blog->blog_id, 'blogdescription' ) );
+						}
+						$json =  $output;
 					}
 						return wp_send_json($json);
         }
